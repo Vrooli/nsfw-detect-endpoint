@@ -27,7 +27,7 @@ services:
       LETSENCRYPT_HOST: "${VIRTUAL_HOST}"
       LETSENCRYPT_EMAIL: "${LETSENCRYPT_EMAIL}"
     volumes:
-      - ./:${PROJECT_DIR}
+      - ./:${PROJECT_DIR:-/srv/app}
     ports:
       - "${PORT_NSFW:-3396}:${PORT_NSFW:-3396}"
     networks:
