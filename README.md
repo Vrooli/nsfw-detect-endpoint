@@ -33,7 +33,7 @@ curl -X POST \
 
 If you are authenticated, it will return an object of this shape:
 
-```
+```json
 {
     "predictions": [
         "<unique-hash-for-image>": {

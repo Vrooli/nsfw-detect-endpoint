@@ -29,7 +29,7 @@ services:
     volumes:
       - ./:${PROJECT_DIR}
     ports:
-      - "${PORT_NSFW}:${PORT_NSFW}"
+      - "${PORT_NSFW:-3396}:${PORT_NSFW:-3396}"
     networks:
       - proxy
       - app
